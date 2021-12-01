@@ -12,7 +12,7 @@ handler.before = async function (m) {
       global.db.data.users[m.sender].exp += math.bonus
       clearTimeout(this.math[id][3])
       delete this.math[id]
-      await this.sendButton(m.chat, `*Benar!* +${math.bonus} XP`, '© stikerin', `${math.mode.toUpperCase()}`, `.math ${math.mode}`, m)
+      await this.sendButton(m.chat, `*Benar!* +${math.bonus} XP`, '© Bay', `${math.mode.toUpperCase()}`, `.math ${math.mode}`, m)
     } else {
       if (--this.math[id][2] == 0) {
         clearTimeout(this.math[id][3])
