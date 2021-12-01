@@ -27,8 +27,8 @@ const defaultMenu = {
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+*BayBot official*
+${'```Original```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
